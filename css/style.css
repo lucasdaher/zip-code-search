@@ -1,7 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
 body {
     height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
+    background-color: #1e8fff3d;
+    /* background-color: var(--orange, #FF793F); */
+}
+
+.container {
+    background-color: var(--white, #f9f9f9);
+    width: 60%;
+    height: auto;
+
+    border-radius: 16px;
+    background: var(--White, #FFF);
+    box-shadow: 5px 32px 56px 0px rgba(118, 63, 0, 0.2);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container .title {
+    text-align: center;
+    padding: 40px;
+}
+
+.container .form {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+
+    margin-bottom: 10px;
+}
+
+.container form {
+    width: 80%;
+}
+
+.container .form label {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.container .form input {
+    width: 100%;
+    height: 45px;
+
+    border-radius: 10px;
+    border: 0;
+    background: var(--blue, #1e8fff3d);
+    color: var(--black, #141414);
+
+    text-indent: 15px;
+    outline: 0;
+}
+
+
+.container form #btn-search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 50px auto;
+
+    gap: 6px;
+    font-size: 16px;
+    font-weight: 500;
+
+    border: 0;
+    border-radius: 6px;
+
+    color: var(--white, #F9F9F9);
+    background-color: var(--blue, #1e90ff);
+
+    padding: 6px 12px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.container form #btn-search:hover {
+    background-color: #104b86;
+    transform: translateY(-6%);
+}
+
+.container form #btn-search .bx.bx-search-alt-2{
+    font-size: 18px;
+}
+
+@media screen and (max-width: 700px) {
+    .container {
+        width: 90%;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .container {
+        width: 50%;
+    }
 }

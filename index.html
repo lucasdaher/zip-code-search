@@ -5,9 +5,37 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="css/style.css">
     <title>Zip Code Search</title>
 </head>
 <body>
-    
+    <div class="container">
+        <div class="title">
+            <h1>ZIP CODE SEARCH 🌎</h1>
+            <p>Search for any zip code from anywhere in Brazil.</p>
+        </div>
+        <form>
+            <div class="form">
+                <label for="form-zipcode">Zip Code</label>
+                <input type="text" name="form-zipcode" id="zipcode" placeholder="Write the zip code..." required>
+            </div>
+            <div class="form">
+                <label for="form-city">City</label>
+                <input type="text" name="form-city" id="city" required readonly>
+            </div>
+            <div class="form">
+                <label for="form-street">Street</label>
+                <input type="text" name="form-street" id="street" required readonly>
+            </div>
+            <div class="form">
+                <label for="form-neighborhood">Neighborhood</label>
+                <input type="text" name="form-neighborhood" id="neighborhood" required readonly>
+            </div>
+            
+            <button type="button" id="btn-search"><i class='bx bx-search-alt-2'></i>Search</button>
+        </form>
+    </div>
+    <script src="js/script.js"></script>
 </body>
 </html>
