@@ -15,9 +15,9 @@ body {
     justify-content: center;
 
     background-color: #1e8fff3d;
-    /* background-color: var(--orange, #FF793F); */
 }
 
+/* Container */
 .container {
     background-color: var(--white, #f9f9f9);
     width: 60%;
@@ -32,9 +32,19 @@ body {
     align-items: center;
 }
 
+/* Container Title */
 .container .title {
     text-align: center;
     padding: 40px;
+}
+
+.container .title h1 {
+    margin-bottom: 4px;
+}
+
+/* Form */
+.container form {
+    width: 80%;
 }
 
 .container .form {
@@ -45,10 +55,6 @@ body {
     gap: 6px;
 
     margin-bottom: 10px;
-}
-
-.container form {
-    width: 80%;
 }
 
 .container .form label {
@@ -68,7 +74,6 @@ body {
     text-indent: 15px;
     outline: 0;
 }
-
 
 .container form #btn-search {
     display: flex;
@@ -101,6 +106,7 @@ body {
     font-size: 18px;
 }
 
+/* Responsive */
 @media screen and (max-width: 700px) {
     .container {
         width: 90%;
